@@ -223,9 +223,151 @@ a{
 }
 /* -------------------------------------------*/
 .mega-body{
-  background-color: cornflowerblue;
+  background-color: #e9ecef;
   width: 100%;
-  height: 400px;
+  margin-top: 140px;
+}
+.banner{
+  width: 100%;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+  height: auto;      /* giữ tỉ lệ */
+  display: block;
+  object-fit: cover;
+}
+.banner-content{
+  top: 42%;
+  left: 15%;
+  position: absolute;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  max-width: 468px;
+}
+.title-one{
+  font-size: 14px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.banner-content>h1>p{
+  font-weight: bold;
+  line-height: 150%;
+  letter-spacing: 0.56px;
+  margin-bottom: 8px;
+  font-size: 50px;
+}
+.title-last{
+  font-family: "Bonheur Royale", cursive;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.button-dk{
+  width: fit-content;
+    padding: 17px 25px;
+    border-radius: 60px;
+    background: #183883;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 140%;
+    transition: all 0.3s ease;
+}
+.section-body-top{
+  max-width: 1200px;
+  margin: 0 auto;      /* căn giữa khung cha */
+  width: 100%;
+}
+.sec-top{
+  padding: 60px 0;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1));
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;     /* căn giữa theo chiều dọc */
+  padding-left: 20px;
+}
+.sec-top>div{
+  border-radius: 12px;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.05);
+  height: 146px;
+  width: 204px;
+  background-color: white;
+
+  display: flex;           /* để căn ảnh bên trong */
+  justify-content: center;
+  align-items: center;
+}
+.sec-top img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;     /* ảnh nằm gọn trong khung */
+  display: block;
+}
+.content-sec{
+  display: flex;
+  flex-direction: column;   /* xếp dọc: ảnh trên, text dưới */
+  justify-content: center;
+  align-items: center;      /* căn giữa ngang */
+  gap: 8px;                 /* khoảng cách giữa ảnh và chữ */
+  text-align: center;
+  margin-left: 20px;
+}
+
+.content-sec span {
+  color: #333;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.content-sec span:hover {
+  color: #1e73be;
+}
+
+
+.sec-bottom{
+  padding-bottom: 60px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1));
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center; /* căn giữa cả cụm */
+  align-items: center;
+  gap: 22px;               /* khoảng cách giữa 2 ảnh */
+  flex-wrap: nowrap;      /* luôn cùng 1 dòng */
+}
+
+.sec-bottom > div {
+  border-radius: 12px;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.05);
+  height: 280px;
+  width: 592px;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden; /*  chặn ảnh tràn ra ngoài */
+}
+
+.sec-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+
+  transition: transform 0.4s ease; /* mượt */
+}
+
+.sec-bottom > div:hover img {
+  transform: scale(1.1); /* zoom in 10% */
 }
 /* -------------------------------------------*/
 .mega-footer{
@@ -278,6 +420,7 @@ a{
   line-height: 1.35;
   display: block;
 }
+
 /* -------------------------------------------*/
 .text-mid-footer .content-bottom a{
   text-decoration: none;
